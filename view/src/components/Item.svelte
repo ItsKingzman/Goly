@@ -46,7 +46,7 @@
 </script>
 {#if showCard }
 <Card>
-    <p>Goly: http://localhost:3000/r/{goly.goly}</p>
+    <p>Goly: <a href="http://localhost:3000/r/{goly.goly}" target="_blank">http://localhost:3000/r/{goly.goly}</a></p>
     <p>Redirect: {goly.redirect}</p>
     <p>Clicked: {goly.clicked}</p>
     <button class="update" on:click={handleOpen(goly)}>Update</button>
